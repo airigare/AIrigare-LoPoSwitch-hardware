@@ -1,0 +1,39 @@
+[Eagle]
+Version="07 06 00"
+Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/GeekAmmo.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/LilyPad-Wearables.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Aesthetics.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-AnalogIC.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Boards.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Capacitors.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Connectors.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-DigitalIC.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Displays.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Electromechanical.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-FreqCtrl.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-LED.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Passives.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-PowerIC.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-RF.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Resistors.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Retired.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/SparkFun-Sensors.lbr"
+UsedLibrary="/Users/mikmak/Documents/eagle/external_lbs/User-Submitted.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="24 29 1317 820"
+State=2
+Number=0
+
+[Desktop]
+Screen="1440 900"
+Window="Win_1"
