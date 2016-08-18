@@ -3517,7 +3517,7 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </classes>
 <parts>
 <part name="ATMEGA328" library="SparkFun-Connectors" deviceset="ZIFSOCKET-28-3" device="ZIFFSOCKET-28-3"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="NDP6020P_20V_24A_LOW_VGS_TH" value="MOSFET-PCHANNELNDP6020P_20V_24A_LOW_VGS_TH"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="DMG2307L" value="2.5A/30V"/>
 <part name="12VIN" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2" value="12V"/>
 <part name="12VO" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2" value="12V"/>
 <part name="3.3V-VR" library="SparkFun-PowerIC" deviceset="V_REG_LD1117VXX" device=""/>

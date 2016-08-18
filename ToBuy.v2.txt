@@ -1,0 +1,28 @@
+Partlist
+
+Exported from shema.v5.sch at 17/08/16 22:47
+
+EAGLE Version 7.6.0 Copyright (c) 1988-2016 CadSoft
+
+Assembly variant: 
+
+Part           Value                                      Device                                     Package            Library                    Sheet
+
+3.3V-VR        V_REG_LD1117VXX                            V_REG_LD1117VXX                            78XXL              SparkFun-PowerIC           1
+5V-VR          5V                                         V_REG_78XX-TO-220                          TO-220-ALT         SparkFun-PowerIC           1
+12VIN          12V                                        M02JST-PTH-2                               JST-2-PTH          SparkFun-Connectors        1
+12VO           12V                                        M02JST-PTH-2                               JST-2-PTH          SparkFun-Connectors        1
+ATMEGA328      ZIFSOCKET-28-3ZIFFSOCKET-28-3              ZIFSOCKET-28-3ZIFFSOCKET-28-3              DIL28-3-ZIF_SOCKET SparkFun-Connectors        1
+C1             22uF                                       22UF-16V-20%-(1210)                        1210               SparkFun-Capacitors        1
+C2             22uF                                       22UF-16V-20%-(1210)                        1210               SparkFun-Capacitors        1
+D1             Yellow                                     LED-YELLOW0603                             LED-0603           SparkFun-LED               1
+D2             RED                                        LED-RED0603                                LED-0603           SparkFun-LED               1
+D3             GREEN                                      LED-GREEN1206                              LED-1206           SparkFun-LED               1
+FREQ_RESONATOR 16MHZ                                      RESONATOR16MHZ                             RESONATOR-SMD      SparkFun-FreqCtrl          1
+NRF8001        3.3V                                       M10SILK_FEMALE_PTH                         1X10               SparkFun-Connectors        1
+Q1             MOSFET-PCHANNELNDP6020P_20V_24A_LOW_VGS_TH MOSFET-PCHANNELNDP6020P_20V_24A_LOW_VGS_TH TO220V             SparkFun-DiscreteSemi      1
+R1             1MOHM                                      RESISTORPTH-1/6W                           1/6W-RES           SparkFun-Resistors         1
+R2             220                                        100OHM-1/4W-1%(PTH)HORIZ-KIT               AXIAL-0.3EZ        SparkFun-Resistors         1
+R3             200                                        200OHM1/10W1%(0603)                        0603-RES           SparkFun-Resistors         1
+R4             200                                        200OHM1/10W1%(0603)                        0603-RES           SparkFun-Resistors         1
+RESET.BUTTON   BUTTON-CONDUCTIVESMD                       BUTTON-CONDUCTIVESMD                       BUTTON-CONDUCTIVE  SparkFun-Electromechanical 1
