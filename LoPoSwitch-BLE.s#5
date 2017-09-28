@@ -2484,10 +2484,8 @@ type 0204, grid 5 mm</description>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="149.86" y1="-7.62" x2="149.86" y2="-13.97" width="0.1524" layer="91"/>
 <pinref part="RED-LED" gate="G$1" pin="-"/>
 <wire x1="149.86" y1="-13.97" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="149.86" y="-13.97"/>
 </segment>
 </net>
 <net name="3.3VIN" class="0">

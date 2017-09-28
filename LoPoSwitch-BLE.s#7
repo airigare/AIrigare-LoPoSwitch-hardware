@@ -2051,6 +2051,34 @@ type 0207, grid 10 mm</description>
 <rectangle x1="3.302" y1="-0.3048" x2="4.1656" y2="0.3048" layer="21"/>
 <rectangle x1="-3.9116" y1="-0.3048" x2="-3.048" y2="0.3048" layer="21"/>
 </package>
+<package name="PR-D1.8*L3.3MM">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0204, grid 5 mm</description>
+<pad name="6" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="5" x="-2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<wire x1="2.54" y1="0" x2="2.032" y2="0" width="0.508" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.508" layer="51"/>
+<wire x1="-1.778" y1="0.635" x2="-1.524" y2="0.889" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.524" y2="-0.889" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.889" x2="1.778" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="0.889" x2="1.778" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.778" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-1.524" y1="0.889" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="0.762" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.889" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.762" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.762" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.762" x2="-1.143" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.762" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.762" x2="-1.143" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="0.889" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-0.889" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="51"/>
+<text x="-1.905" y="1.143" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.651" y="-2.159" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
+<rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RES">
@@ -2100,6 +2128,26 @@ type 0207, grid 10 mm</description>
 <technology name="">
 <attribute name="MPN" value="FHCFR-1/4W-105J" constant="no"/>
 <attribute name="VALUE" value="1M"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIP-RES-100K-5%-1/6W(PR-D1.8XL3.3MM)" prefix="R" uservalue="yes">
+<description>301020040</description>
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PR-D1.8*L3.3MM">
+<connects>
+<connect gate="G$1" pin="1" pad="6"/>
+<connect gate="G$1" pin="2" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="FHCFR-1/6W-104J--" constant="no"/>
+<attribute name="VALUE" value="100K"/>
 </technology>
 </technologies>
 </device>
@@ -2335,6 +2383,7 @@ type 0207, grid 10 mm</description>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="RED-LED1" library="Seeed-LED" deviceset="DIP-LED-RED-RED(2P-D3MM)" device="" value="SR302DC"/>
 <part name="R2" library="Seeed-Resistor" deviceset="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="220R"/>
+<part name="R4" library="Seeed-Resistor" deviceset="DIP-RES-100K-5%-1/6W(PR-D1.8XL3.3MM)" device="" value="100K"/>
 </parts>
 <sheets>
 <sheet>
@@ -2371,7 +2420,8 @@ type 0207, grid 10 mm</description>
 <instance part="K1" gate="G$1" x="66.04" y="-109.22"/>
 <instance part="GND11" gate="1" x="66.04" y="-124.46"/>
 <instance part="RED-LED1" gate="G$1" x="149.86" y="-40.64" rot="R270"/>
-<instance part="R2" gate="G$1" x="149.86" y="15.24" rot="R180"/>
+<instance part="R2" gate="G$1" x="149.86" y="7.62" rot="R90"/>
+<instance part="R4" gate="G$1" x="149.86" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -2550,9 +2600,11 @@ type 0207, grid 10 mm</description>
 <label x="119.38" y="15.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="15.24" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
-<label x="142.24" y="20.32" size="1.778" layer="95" xref="yes"/>
+<wire x1="149.86" y1="15.24" x2="149.86" y2="11.43" width="0.1524" layer="91"/>
+<label x="149.86" y="15.24" size="1.778" layer="95" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="11.43" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
+<junction x="149.86" y="11.43"/>
 </segment>
 </net>
 <net name="12VIN" class="0">
@@ -2646,17 +2698,17 @@ type 0207, grid 10 mm</description>
 <label x="119.38" y="-20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="RED-LED" gate="G$1" pin="+"/>
-<wire x1="153.67" y1="15.24" x2="149.86" y2="-1.27" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="RED-LED1" gate="G$1" pin="+"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="RED-LED" gate="G$1" pin="+"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="3.81" x2="149.86" y2="-1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

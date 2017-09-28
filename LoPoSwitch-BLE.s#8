@@ -2371,7 +2371,7 @@ type 0207, grid 10 mm</description>
 <instance part="K1" gate="G$1" x="66.04" y="-109.22"/>
 <instance part="GND11" gate="1" x="66.04" y="-124.46"/>
 <instance part="RED-LED1" gate="G$1" x="149.86" y="-40.64" rot="R270"/>
-<instance part="R2" gate="G$1" x="149.86" y="15.24" rot="R90"/>
+<instance part="R2" gate="G$1" x="149.86" y="15.24" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2550,8 +2550,9 @@ type 0207, grid 10 mm</description>
 <label x="119.38" y="15.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="20.32" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
-<label x="149.86" y="20.32" size="1.778" layer="95" xref="yes"/>
+<wire x1="147.32" y1="15.24" x2="142.24" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="15.24" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="142.24" y="20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="12VIN" class="0">
@@ -2649,7 +2650,7 @@ type 0207, grid 10 mm</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="RED-LED" gate="G$1" pin="+"/>
-<wire x1="149.86" y1="11.43" x2="149.86" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="153.67" y1="15.24" x2="149.86" y2="-1.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

@@ -2409,7 +2409,7 @@ type 0204, grid 5 mm</description>
 <instance part="CAPACITOR-22PF-1" gate="G$1" x="48.26" y="-58.42"/>
 <instance part="CAPACITOR-22PF-2" gate="G$1" x="48.26" y="-66.04"/>
 <instance part="CAPACITOR-22PF-3" gate="G$1" x="119.38" y="-7.62" rot="R270"/>
-<instance part="R6" gate="G$1" x="149.86" y="-30.48" rot="R270"/>
+<instance part="R6" gate="G$1" x="149.86" y="-33.02" rot="R270"/>
 <instance part="RED-LED" gate="G$1" x="149.86" y="-10.16" rot="R270"/>
 <instance part="CAPACITOR-22PF-4" gate="G$1" x="68.58" y="22.86" rot="R270"/>
 <instance part="R3" gate="G$1" x="66.04" y="-10.16" rot="R90"/>
@@ -2657,10 +2657,10 @@ type 0204, grid 5 mm</description>
 <label x="38.1" y="-73.66" size="1.27" layer="95"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="-25.4" x2="149.86" y2="-26.67" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-25.4" x2="149.86" y2="-29.21" width="0.1524" layer="91"/>
 <label x="149.86" y="-25.4" size="1.778" layer="95" xref="yes"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-26.67" x2="149.86" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-29.21" x2="149.86" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2703,18 +2703,17 @@ type 0204, grid 5 mm</description>
 <label x="119.38" y="-20.32" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="RED-LED1" gate="G$1" pin="+"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="-34.29" x2="149.86" y2="-36.83" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="RED-LED" gate="G$1" pin="+"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="-3.81" x2="149.86" y2="-6.35" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="RED-LED1" gate="G$1" pin="+"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

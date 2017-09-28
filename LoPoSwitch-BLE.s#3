@@ -2367,7 +2367,6 @@ type 0204, grid 5 mm</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="RESET-BUTTON" library="Seeed-Switch" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
 <part name="CAPACITOR-16HZ" library="Seeed-Crystal Oscillator" deviceset="DIP-CRYSTAL-16MHZ-18PF-30PPM-50R(HC49US)" device="" value="16MHZ"/>
 <part name="CAPACITOR-22PF-1" library="Seeed-Capacitor" deviceset="DIP-ALUMINUM-47UF-16V(D5-H7MM)" device="" value="100uf"/>
@@ -2405,7 +2404,6 @@ type 0204, grid 5 mm</description>
 <instance part="GND3" gate="1" x="119.38" y="-48.26" rot="R90"/>
 <instance part="GND8" gate="1" x="132.08" y="-111.76"/>
 <instance part="GND9" gate="1" x="149.86" y="-17.78"/>
-<instance part="GND10" gate="1" x="149.86" y="-45.72"/>
 <instance part="RESET-BUTTON" gate="G$1" x="45.72" y="-17.78"/>
 <instance part="CAPACITOR-16HZ" gate="G$1" x="60.96" y="-60.96" rot="R90"/>
 <instance part="CAPACITOR-22PF-1" gate="G$1" x="48.26" y="-58.42"/>
@@ -2486,6 +2484,13 @@ type 0204, grid 5 mm</description>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="RED-LED" gate="G$1" pin="-"/>
 <wire x1="149.86" y1="-13.97" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="149.86" y1="-48.26" x2="149.86" y2="-44.45" width="0.1524" layer="91"/>
+<label x="149.86" y="-48.26" size="1.778" layer="95" xref="yes"/>
+<pinref part="RED-LED1" gate="G$1" pin="-"/>
+<wire x1="149.86" y1="-44.45" x2="149.86" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="149.86" y="-44.45"/>
 </segment>
 </net>
 <net name="3.3VIN" class="0">
