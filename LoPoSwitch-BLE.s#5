@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2051,34 +2051,6 @@ type 0207, grid 10 mm</description>
 <rectangle x1="3.302" y1="-0.3048" x2="4.1656" y2="0.3048" layer="21"/>
 <rectangle x1="-3.9116" y1="-0.3048" x2="-3.048" y2="0.3048" layer="21"/>
 </package>
-<package name="PR-D1.8*L3.3MM">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-type 0204, grid 5 mm</description>
-<pad name="6" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<pad name="5" x="-2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<wire x1="2.54" y1="0" x2="2.032" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.508" layer="51"/>
-<wire x1="-1.778" y1="0.635" x2="-1.524" y2="0.889" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.778" y1="-0.635" x2="-1.524" y2="-0.889" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.524" y1="-0.889" x2="1.778" y2="-0.635" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.524" y1="0.889" x2="1.778" y2="0.635" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.778" y1="-0.635" x2="-1.778" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-1.524" y1="0.889" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="0.762" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-0.889" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-0.762" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.762" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.762" x2="-1.143" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-0.762" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-0.762" x2="-1.143" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="1.524" y1="0.889" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="1.524" y1="-0.889" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="51"/>
-<text x="-1.905" y="1.143" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.651" y="-2.159" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
-<rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="RES">
@@ -2128,26 +2100,6 @@ type 0204, grid 5 mm</description>
 <technology name="">
 <attribute name="MPN" value="FHCFR-1/4W-105J" constant="no"/>
 <attribute name="VALUE" value="1M"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DIP-RES-100K-5%-1/6W(PR-D1.8XL3.3MM)" prefix="R" uservalue="yes">
-<description>301020040</description>
-<gates>
-<gate name="G$1" symbol="RES" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PR-D1.8*L3.3MM">
-<connects>
-<connect gate="G$1" pin="1" pad="6"/>
-<connect gate="G$1" pin="2" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="FHCFR-1/6W-104J--" constant="no"/>
-<attribute name="VALUE" value="100K"/>
 </technology>
 </technologies>
 </device>
@@ -2367,7 +2319,6 @@ type 0204, grid 5 mm</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="RESET-BUTTON" library="Seeed-Switch" deviceset="DIP-BUTTON(2P-6.0X3.0X4.3MM)" device="-TS-1101F" value="TS-1101F"/>
 <part name="CAPACITOR-16HZ" library="Seeed-Crystal Oscillator" deviceset="DIP-CRYSTAL-16MHZ-18PF-30PPM-50R(HC49US)" device="" value="16MHZ"/>
 <part name="CAPACITOR-22PF-1" library="Seeed-Capacitor" deviceset="DIP-ALUMINUM-47UF-16V(D5-H7MM)" device="" value="100uf"/>
@@ -2383,7 +2334,7 @@ type 0204, grid 5 mm</description>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="RED-LED1" library="Seeed-LED" deviceset="DIP-LED-RED-RED(2P-D3MM)" device="" value="SR302DC"/>
 <part name="R2" library="Seeed-Resistor" deviceset="DIP-RES-220R-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="220R"/>
-<part name="R4" library="Seeed-Resistor" deviceset="DIP-RES-100K-5%-1/6W(PR-D1.8XL3.3MM)" device="" value="100K"/>
+<part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2394,34 +2345,33 @@ type 0204, grid 5 mm</description>
 <instance part="12VIN" gate="G$1" x="68.58" y="60.96" rot="R270"/>
 <instance part="12VO" gate="G$1" x="86.36" y="-121.92" rot="R90"/>
 <instance part="3.3V-VR" gate="G$1" x="119.38" y="5.08" rot="R270"/>
-<instance part="5V-VR" gate="G$1" x="68.58" y="33.02" rot="R270"/>
+<instance part="5V-VR" gate="G$1" x="68.58" y="34.29" rot="R270"/>
 <instance part="GND2" gate="1" x="22.86" y="-60.96" rot="R270"/>
 <instance part="GND4" gate="1" x="22.86" y="5.08" rot="R270"/>
 <instance part="NRF8001" gate="G$1" x="149.86" y="-78.74" rot="R180"/>
 <instance part="GND5" gate="1" x="22.86" y="15.24" rot="R270"/>
 <instance part="GND6" gate="1" x="22.86" y="-53.34" rot="R270"/>
 <instance part="GND7" gate="1" x="22.86" y="-17.78" rot="R270"/>
-<instance part="GND1" gate="1" x="86.36" y="-109.22" rot="R180"/>
+<instance part="GND1" gate="1" x="86.36" y="-111.76" rot="R180"/>
 <instance part="GND3" gate="1" x="119.38" y="-48.26" rot="R90"/>
-<instance part="GND8" gate="1" x="132.08" y="-111.76"/>
-<instance part="GND9" gate="1" x="149.86" y="-17.78"/>
-<instance part="GND10" gate="1" x="149.86" y="-45.72"/>
+<instance part="GND8" gate="1" x="132.08" y="-110.49"/>
+<instance part="GND9" gate="1" x="144.78" y="-20.32"/>
 <instance part="RESET-BUTTON" gate="G$1" x="45.72" y="-17.78"/>
-<instance part="CAPACITOR-16HZ" gate="G$1" x="60.96" y="-60.96" rot="R90"/>
+<instance part="CAPACITOR-16HZ" gate="G$1" x="64.77" y="-62.23" rot="R90"/>
 <instance part="CAPACITOR-22PF-1" gate="G$1" x="48.26" y="-58.42"/>
 <instance part="CAPACITOR-22PF-2" gate="G$1" x="48.26" y="-66.04"/>
 <instance part="CAPACITOR-22PF-3" gate="G$1" x="119.38" y="-7.62" rot="R270"/>
 <instance part="R6" gate="G$1" x="149.86" y="-33.02" rot="R270"/>
-<instance part="RED-LED" gate="G$1" x="149.86" y="-10.16" rot="R270"/>
+<instance part="RED-LED" gate="G$1" x="144.78" y="-7.62" rot="R270"/>
 <instance part="CAPACITOR-22PF-4" gate="G$1" x="68.58" y="22.86" rot="R270"/>
-<instance part="R3" gate="G$1" x="66.04" y="-10.16" rot="R90"/>
+<instance part="R3" gate="G$1" x="76.2" y="-13.97" rot="R90"/>
 <instance part="R1" gate="G$1" x="132.08" y="-96.52" rot="R90"/>
 <instance part="D1" gate="G$1" x="132.08" y="-104.14" rot="R270"/>
 <instance part="K1" gate="G$1" x="66.04" y="-109.22"/>
-<instance part="GND11" gate="1" x="66.04" y="-124.46"/>
+<instance part="GND11" gate="1" x="50.8" y="-115.57" rot="R270"/>
 <instance part="RED-LED1" gate="G$1" x="149.86" y="-40.64" rot="R270"/>
-<instance part="R2" gate="G$1" x="149.86" y="0" rot="R90"/>
-<instance part="R4" gate="G$1" x="149.86" y="20.32"/>
+<instance part="R2" gate="G$1" x="144.78" y="5.08" rot="R90"/>
+<instance part="GND10" gate="1" x="149.86" y="-49.53"/>
 </instances>
 <busses>
 </busses>
@@ -2435,7 +2385,7 @@ type 0204, grid 5 mm</description>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="5V-VR" gate="G$1" pin="GND"/>
-<wire x1="25.4" y1="15.24" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="15.24" x2="60.96" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ATMEGA328" gate="G$1" pin="P$8"/>
@@ -2453,39 +2403,48 @@ type 0204, grid 5 mm</description>
 <label x="68.58" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="132.08" y1="-106.68" x2="132.08" y2="-109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ATMEGA328" gate="G$1" pin="P$9"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="76.2" y1="-58.42" x2="25.4" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-58.42" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
-<pinref part="ATMEGA328" gate="G$1" pin="P$10"/>
-<wire x1="76.2" y1="-63.5" x2="50.8" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-63.5" x2="50.8" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="-66.04" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-66.04" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="25.4" y="-60.96"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="12VO" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="-111.76" x2="86.36" y2="-114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="66.04" y1="-121.92" x2="66.04" y2="-119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="3.3V-VR" gate="G$1" pin="GND"/>
 <wire x1="25.4" y1="5.08" x2="111.76" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="RED-LED" gate="G$1" pin="-"/>
-<wire x1="149.86" y1="-13.97" x2="149.86" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="144.78" y1="-11.43" x2="144.78" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CAPACITOR-22PF-1" gate="G$1" pin="+"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="44.45" y1="-58.42" x2="25.4" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-58.42" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="CAPACITOR-22PF-2" gate="G$1" pin="+"/>
+<wire x1="44.45" y1="-66.04" x2="25.4" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-66.04" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="25.4" y="-60.96"/>
+</segment>
+<segment>
+<pinref part="K1" gate="G$1" pin="V-"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="RED-LED1" gate="G$1" pin="-"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="149.86" y1="-46.99" x2="149.86" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="149.86" y="-45.72"/>
+<wire x1="149.86" y1="-45.72" x2="149.86" y2="-44.45" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="-"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="12VO" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ATMEGA328" gate="G$1" pin="P$22"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="109.22" y1="-48.26" x2="116.84" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3VIN" class="0">
@@ -2493,6 +2452,11 @@ type 0204, grid 5 mm</description>
 <pinref part="NRF8001" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="-60.96" x2="129.54" y2="-60.96" width="0.1524" layer="91"/>
 <label x="129.54" y="-60.96" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAPACITOR-22PF-3" gate="G$1" pin="-"/>
+<wire x1="119.38" y1="-11.43" x2="119.38" y2="-15.24" width="0.1524" layer="91"/>
+<label x="119.38" y="-15.24" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -2507,9 +2471,9 @@ type 0204, grid 5 mm</description>
 <label x="111.76" y="-63.5" size="1.27" layer="95"/>
 </segment>
 <segment>
-<wire x1="132.08" y1="-91.44" x2="124.46" y2="-91.44" width="0.1524" layer="91"/>
-<label x="124.46" y="-91.44" size="1.27" layer="95"/>
-<wire x1="132.08" y1="-91.44" x2="132.08" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="-92.71" x2="132.08" y2="-90.17" width="0.1524" layer="91"/>
+<label x="132.08" y="-90.17" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -2522,6 +2486,10 @@ type 0204, grid 5 mm</description>
 <pinref part="ATMEGA328" gate="G$1" pin="P$18"/>
 <wire x1="109.22" y1="-68.58" x2="111.76" y2="-68.58" width="0.1524" layer="91"/>
 <label x="111.76" y="-68.58" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="NRF8001" gate="G$1" pin="5"/>
+<wire x1="139.7" y1="-71.12" x2="129.54" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -2548,13 +2516,6 @@ type 0204, grid 5 mm</description>
 <label x="111.76" y="-78.74" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="RDY" class="0">
-<segment>
-<pinref part="NRF8001" gate="G$1" pin="6"/>
-<wire x1="139.7" y1="-73.66" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
-<label x="129.54" y="-73.66" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="RST" class="0">
 <segment>
 <pinref part="NRF8001" gate="G$1" pin="4"/>
@@ -2574,18 +2535,6 @@ type 0204, grid 5 mm</description>
 <label x="66.04" y="-48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="17.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="CAPACITOR-22PF-4" gate="G$1" pin="-"/>
-<wire x1="68.58" y1="19.05" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="-7.62" x2="66.04" y2="-6.35" width="0.1524" layer="91"/>
-<label x="66.04" y="-5.08" size="1.27" layer="95"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="-6.35" x2="66.04" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="66.04" y="-6.35"/>
-</segment>
-<segment>
 <pinref part="ATMEGA328" gate="G$1" pin="P$21"/>
 <wire x1="109.22" y1="-53.34" x2="111.76" y2="-53.34" width="0.1524" layer="91"/>
 <label x="111.76" y="-53.34" size="1.27" layer="95"/>
@@ -2601,27 +2550,36 @@ type 0204, grid 5 mm</description>
 <label x="119.38" y="15.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="7.62" x2="149.86" y2="3.81" width="0.1524" layer="91"/>
-<label x="149.86" y="7.62" size="1.778" layer="95" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="8.89" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
+<label x="144.78" y="12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="CAPACITOR-22PF-4" gate="G$1" pin="-"/>
+<wire x1="68.58" y1="19.05" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
+<label x="68.58" y="15.24" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="-10.16" x2="76.2" y2="-7.62" width="0.1524" layer="91"/>
+<label x="76.2" y="-7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="12VIN" class="0">
 <segment>
-<wire x1="66.04" y1="-99.06" x2="66.04" y2="-97.79" width="0.1524" layer="91"/>
-<label x="66.04" y="-93.98" size="1.27" layer="95" xref="yes"/>
-<pinref part="K1" gate="G$1" pin="NO"/>
-<wire x1="66.04" y1="-93.98" x2="66.04" y2="-97.79" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="5V-VR" gate="G$1" pin="IN"/>
-<wire x1="68.58" y1="40.64" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
-<label x="68.58" y="43.18" size="1.27" layer="95"/>
-</segment>
-<segment>
 <pinref part="12VIN" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 <label x="71.12" y="50.8" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="5V-VR" gate="G$1" pin="IN"/>
+<wire x1="68.58" y1="41.91" x2="68.58" y2="43.18" width="0.1524" layer="91"/>
+<label x="68.58" y="43.18" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="K1" gate="G$1" pin="V+"/>
+<wire x1="53.34" y1="-102.87" x2="45.72" y2="-102.87" width="0.1524" layer="91"/>
+<label x="45.72" y="-102.87" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ARDUINO.D3" class="0">
@@ -2630,20 +2588,10 @@ type 0204, grid 5 mm</description>
 <wire x1="76.2" y1="-33.02" x2="71.12" y2="-33.02" width="0.1524" layer="91"/>
 <label x="71.12" y="-33.02" size="1.27" layer="95" rot="R180"/>
 </segment>
-</net>
-<net name="N$5" class="0">
 <segment>
-<pinref part="5V-VR" gate="G$1" pin="OUT"/>
-<wire x1="68.58" y1="25.4" x2="68.58" y2="26.67" width="0.1524" layer="91"/>
-<pinref part="CAPACITOR-22PF-4" gate="G$1" pin="+"/>
-<wire x1="68.58" y1="26.67" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
-<junction x="68.58" y="26.67"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="ATMEGA328" gate="G$1" pin="P$22"/>
-<wire x1="109.22" y1="-48.26" x2="119.38" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="K1" gate="G$1" pin="NO"/>
+<wire x1="66.04" y1="-97.79" x2="66.04" y2="-95.25" width="0.1524" layer="91"/>
+<label x="66.04" y="-95.25" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -2651,6 +2599,11 @@ type 0204, grid 5 mm</description>
 <pinref part="ATMEGA328" gate="G$1" pin="P$12"/>
 <wire x1="76.2" y1="-73.66" x2="38.1" y2="-73.66" width="0.1524" layer="91"/>
 <label x="38.1" y="-73.66" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="-29.21" x2="149.86" y2="-25.4" width="0.1524" layer="91"/>
+<label x="149.86" y="-25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2663,34 +2616,9 @@ type 0204, grid 5 mm</description>
 <segment>
 <pinref part="RESET-BUTTON" gate="G$1" pin="2"/>
 <pinref part="ATMEGA328" gate="G$1" pin="P$1"/>
-<wire x1="53.34" y1="-17.78" x2="66.04" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-17.78" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="-12.7" x2="66.04" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="66.04" y="-17.78"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="12VO" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="-109.22" x2="83.82" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-109.22" x2="83.82" y2="-114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="68.58" y1="22.86" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="3.3V-VR" gate="G$1" pin="OUT"/>
-<wire x1="119.38" y1="-2.54" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<wire x1="119.38" y1="-10.16" x2="119.38" y2="-20.32" width="0.1524" layer="91"/>
-<label x="119.38" y="-20.32" size="1.778" layer="95" xref="yes"/>
+<wire x1="53.34" y1="-17.78" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<junction x="76.2" y="-17.78"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2701,9 +2629,58 @@ type 0204, grid 5 mm</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="RED-LED" gate="G$1" pin="+"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-3.81" x2="149.86" y2="-6.35" width="0.1524" layer="91"/>
+<pinref part="RED-LED" gate="G$1" pin="+"/>
+<wire x1="144.78" y1="1.27" x2="144.78" y2="-3.81" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="ATMEGA328" gate="G$1" pin="P$9"/>
+<pinref part="CAPACITOR-16HZ" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="-58.42" x2="64.77" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="CAPACITOR-22PF-1" gate="G$1" pin="-"/>
+<wire x1="64.77" y1="-58.42" x2="52.07" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="64.77" y="-58.42"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="ATMEGA328" gate="G$1" pin="P$10"/>
+<pinref part="CAPACITOR-16HZ" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="-63.5" x2="64.77" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="-63.5" x2="64.77" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="CAPACITOR-22PF-2" gate="G$1" pin="-"/>
+<wire x1="64.77" y1="-66.04" x2="52.07" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="64.77" y="-66.04"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="K1" gate="G$1" pin="COM"/>
+<pinref part="12VO" gate="G$1" pin="2"/>
+<wire x1="80.01" y1="-109.22" x2="83.82" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-109.22" x2="83.82" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="3.3V-VR" gate="G$1" pin="OUT"/>
+<pinref part="CAPACITOR-22PF-3" gate="G$1" pin="+"/>
+<wire x1="119.38" y1="-2.54" x2="119.38" y2="-3.81" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="CAPACITOR-22PF-4" gate="G$1" pin="+"/>
+<pinref part="5V-VR" gate="G$1" pin="OUT"/>
+</segment>
+</net>
+<net name="RDY" class="0">
+<segment>
+<pinref part="NRF8001" gate="G$1" pin="6"/>
+<wire x1="139.7" y1="-73.66" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
+<label x="129.54" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

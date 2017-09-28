@@ -521,34 +521,6 @@ type 0207, grid 10 mm</description>
 <rectangle x1="3.302" y1="-0.3048" x2="4.1656" y2="0.3048" layer="21"/>
 <rectangle x1="-3.9116" y1="-0.3048" x2="-3.048" y2="0.3048" layer="21"/>
 </package>
-<package name="PR-D1.8*L3.3MM">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-type 0204, grid 5 mm</description>
-<pad name="6" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<pad name="5" x="-2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<wire x1="2.54" y1="0" x2="2.032" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.508" layer="51"/>
-<wire x1="-1.778" y1="0.635" x2="-1.524" y2="0.889" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.778" y1="-0.635" x2="-1.524" y2="-0.889" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.524" y1="-0.889" x2="1.778" y2="-0.635" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.524" y1="0.889" x2="1.778" y2="0.635" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.778" y1="-0.635" x2="-1.778" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-1.524" y1="0.889" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="0.762" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-0.889" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="-0.762" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.762" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="0.762" x2="-1.143" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-0.762" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-0.762" x2="-1.143" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="1.524" y1="0.889" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="1.524" y1="-0.889" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="51"/>
-<text x="-1.905" y="1.143" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.651" y="-2.159" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
-<rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
-</package>
 </packages>
 </library>
 <library name="Seeed-LED">
@@ -815,183 +787,213 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ATMEGA328" library="SparkFun-Connectors" package="DIL28-3-ZIF_SOCKET" value="ZIFSOCKET-28-3ZIFFSOCKET-28-3" x="-39.37" y="30.48"/>
-<element name="12VIN" library="SparkFun-Connectors" package="JST-2-PTH" value="12V" x="-35.56" y="50.8">
-<attribute name="PROD_ID" value="CONN-09863" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="PRT-09914" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="ATMEGA328" library="SparkFun-Connectors" package="DIL28-3-ZIF_SOCKET" value="ZIFSOCKET-28-3ZIFFSOCKET-28-3" x="26.67" y="35.56"/>
+<element name="12VIN" library="SparkFun-Connectors" package="JST-2-PTH" value="12V" x="95.25" y="43.18">
+<attribute name="PROD_ID" value="CONN-09863" x="130.81" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="PRT-09914" x="130.81" y="-7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="12VO" library="SparkFun-Connectors" package="JST-2-PTH" value="12V" x="-41.91" y="50.8">
-<attribute name="PROD_ID" value="CONN-09863" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="SKU" value="PRT-09914" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="12VO" library="SparkFun-Connectors" package="JST-2-PTH" value="12V" x="5.08" y="8.89">
+<attribute name="PROD_ID" value="CONN-09863" x="46.99" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="SKU" value="PRT-09914" x="46.99" y="-41.91" size="1.778" layer="27" display="off"/>
 </element>
-<element name="3.3V-VR" library="SparkFun-PowerIC" package="78XXL" value="V_REG_LD1117VXX" x="-34.29" y="6.35"/>
-<element name="5V-VR" library="SparkFun-PowerIC" package="TO-220-ALT" value="5V" x="-45.72" y="6.35">
-<attribute name="SF_ID" value="COM-00107" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="PROD_ID" value="VREG-08450" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="3.3V-VR" library="SparkFun-PowerIC" package="78XXL" value="V_REG_LD1117VXX" x="36.83" y="54.61"/>
+<element name="5V-VR" library="SparkFun-PowerIC" package="TO-220-ALT" value="5V" x="66.04" y="54.61">
+<attribute name="SF_ID" value="COM-00107" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="VREG-08450" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
 </element>
-<element name="NRF8001" library="SparkFun-Connectors" package="1X10" value="3.3V" x="-38.1" y="62.23">
-<attribute name="PROD_ID" value="CONN-11563" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="NRF8001" library="SparkFun-Connectors" package="1X10" value="3.3V" x="29.21" y="60.96" rot="R180.8">
+<attribute name="PROD_ID" value="CONN-11563" x="-9.75515" y="122.65196875" size="1.778" layer="27" rot="R180.8" display="off"/>
 </element>
-<element name="RESET-BUTTON" library="Seeed-Switch" package="SW2-5.0-6.0X3.0X4.3MM" value="TS-1101F" x="-49.53" y="59.69">
-<attribute name="MPN" value="TS-1101F" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="RESET-BUTTON" library="Seeed-Switch" package="SW2-5.0-6.0X3.0X4.3MM" value="TS-1101F" x="5.08" y="21.59" rot="R270">
+<attribute name="MPN" value="TS-1101F" x="-54.61" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="CAPACITOR-16HZ" library="Seeed-Crystal Oscillator" package="HC49US" value="16MHZ" x="-26.67" y="53.34">
-<attribute name="MPN" value="49S/18PF" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="CAPACITOR-16HZ" library="Seeed-Crystal Oscillator" package="HC49US" value="16MHZ" x="69.85" y="38.1">
+<attribute name="MPN" value="49S/18PF" x="96.52" y="-15.24" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAPACITOR-22PF-1" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="-24.13" y="44.45">
-<attribute name="MPN" value="KS 100uF/16V" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="CAPACITOR-22PF-1" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="78.74" y="31.75">
+<attribute name="MPN" value="KS 100uF/16V" x="102.87" y="-12.7" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAPACITOR-22PF-2" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="-39.37" y="44.45">
-<attribute name="MPN" value="KS 100uF/16V" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="CAPACITOR-22PF-2" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="66.04" y="26.67">
+<attribute name="MPN" value="KS 100uF/16V" x="105.41" y="-17.78" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAPACITOR-22PF-3" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="-54.61" y="44.45">
-<attribute name="MPN" value="KS 100uF/16V" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="CAPACITOR-22PF-3" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="8.89" y="50.8" rot="R180">
+<attribute name="MPN" value="KS 100uF/16V" x="-45.72" y="95.25" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R6" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="-44.45" y="69.85">
-<attribute name="MPN" value="FHCFR-1/4W-221J" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="R6" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="48.26" y="16.51">
+<attribute name="MPN" value="FHCFR-1/4W-221J" x="92.71" y="-53.34" size="1.778" layer="27" display="off"/>
 </element>
-<element name="RED-LED" library="Seeed-LED" package="LED2-2.54-D3.0MM" value="SR302DC" x="-58.42" y="53.34">
-<attribute name="MPN" value="SR302DC" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="RED-LED" library="Seeed-LED" package="LED2-2.54-D3.0MM" value="SR302DC" x="59.69" y="11.43">
+<attribute name="MPN" value="SR302DC" x="118.11" y="-41.91" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAPACITOR-22PF-4" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="-69.85" y="44.45">
-<attribute name="MPN" value="KS 100uF/16V" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="CAPACITOR-22PF-4" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="58.42" y="38.1">
+<attribute name="MPN" value="KS 100uF/16V" x="128.27" y="-6.35" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R3" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="1M" x="-31.75" y="69.85">
-<attribute name="MPN" value="FHCFR-1/4W-105J" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="R3" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="1M" x="39.37" y="16.51" rot="R270">
+<attribute name="MPN" value="FHCFR-1/4W-105J" x="-30.48" y="-15.24" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R1" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="-59.69" y="62.23">
-<attribute name="MPN" value="FHCFR-1/4W-221J" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="R1" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="58.42" y="45.72" rot="R180">
+<attribute name="MPN" value="FHCFR-1/4W-221J" x="-1.27" y="107.95" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="D1" library="Seeed-LED" package="LED2-2.54-D5.0MM" value="504BW" x="-15.24" y="53.34">
-<attribute name="MPN" value="504BW" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="D1" library="Seeed-LED" package="LED2-2.54-D5.0MM" value="504BW" x="74.93" y="45.72">
+<attribute name="MPN" value="504BW" x="90.17" y="-7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="K1" library="Seeed-Relay" package="REY5-19.0X15.0X15.0MM" value="" x="-60.96" y="8.89"/>
-<element name="RED-LED1" library="Seeed-LED" package="LED2-2.54-D3.0MM" value="SR302DC" x="-50.8" y="53.34">
-<attribute name="MPN" value="SR302DC" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="K1" library="Seeed-Relay" package="REY5-19.0X15.0X15.0MM" value="12V" x="90.17" y="17.78" rot="R90"/>
+<element name="RED-LED1" library="Seeed-LED" package="LED2-2.54-D3.0MM" value="SR302DC" x="59.69" y="20.32">
+<attribute name="MPN" value="SR302DC" x="110.49" y="-33.02" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R2" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="-19.05" y="69.85">
-<attribute name="MPN" value="FHCFR-1/4W-221J" x="0" y="0" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R4" library="Seeed-Resistor" package="PR-D1.8*L3.3MM" value="100K" x="-54.61" y="68.58">
-<attribute name="MPN" value="FHCFR-1/6W-104J--" x="0" y="0" size="1.778" layer="27" display="off"/>
+<element name="R2" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="48.26" y="11.43" rot="R180">
+<attribute name="MPN" value="FHCFR-1/4W-221J" x="29.21" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="NRF8001" pad="2"/>
 <contactref element="5V-VR" pad="GND"/>
 <contactref element="ATMEGA328" pad="8"/>
 <contactref element="RESET-BUTTON" pad="1"/>
 <contactref element="12VIN" pad="1"/>
-<contactref element="ATMEGA328" pad="9"/>
-<contactref element="ATMEGA328" pad="10"/>
-<contactref element="12VO" pad="1"/>
 <contactref element="3.3V-VR" pad="IN"/>
 <contactref element="RED-LED" pad="K"/>
-<wire x1="-36.83" y1="2.54" x2="-45.72" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.1" y1="26.67" x2="-36.83" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.56" y1="26.67" x2="-38.1" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.02" y1="26.67" x2="-35.56" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.56" y1="50.8" x2="-35.56" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-42.91" y1="50.8" x2="-36.56" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.56" y1="62.23" x2="-36.56" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.03" y1="59.69" x2="-42.91" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.15" y1="53.34" x2="-52.03" y2="59.69" width="0" layer="19" extent="1-1"/>
+<contactref element="CAPACITOR-22PF-1" pad="+"/>
+<contactref element="CAPACITOR-22PF-2" pad="+"/>
+<contactref element="K1" pad="3"/>
+<contactref element="RED-LED1" pad="K"/>
+<contactref element="D1" pad="-"/>
+<contactref element="12VO" pad="1"/>
+<contactref element="ATMEGA328" pad="22"/>
+<contactref element="NRF8001" pad="2"/>
+<wire x1="66.04" y1="50.8" x2="84.17" y2="11.68" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="50.8" x2="66.04" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="31.75" x2="34.29" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="39.37" x2="27.94" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="65.04" y1="26.67" x2="25.4" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="4.08" y1="8.89" x2="65.04" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="94.25" y1="43.18" x2="4.08" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="20.32" x2="4.08" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="24.09" x2="60.96" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="11.43" x2="60.96" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="26.670246875" y1="60.924534375" x2="94.25" y2="43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="77.74" y1="31.75" x2="94.25" y2="43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="76.1998" y1="45.72" x2="77.74" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3VIN">
-<contactref element="NRF8001" pad="1"/>
+<contactref element="CAPACITOR-22PF-3" pad="-"/>
+<contactref element="NRF8001" pad="3"/>
+<wire x1="7.89" y1="50.8" x2="24.13049375" y2="60.889071875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
+<contactref element="R1" pad="2"/>
 <contactref element="NRF8001" pad="10"/>
 <contactref element="ATMEGA328" pad="19"/>
-<wire x1="-33.02" y1="34.29" x2="-15.24" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="39.37" x2="6.352228125" y2="60.640821875" width="0" layer="19" extent="1-1"/>
+<wire x1="53.213" y1="45.72" x2="33.02" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
-<contactref element="NRF8001" pad="9"/>
 <contactref element="ATMEGA328" pad="18"/>
-<wire x1="-30.48" y1="34.29" x2="-17.78" y2="62.23" width="0" layer="19" extent="1-1"/>
+<contactref element="NRF8001" pad="9"/>
+<wire x1="35.56" y1="39.37" x2="8.891978125" y2="60.6762875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
-<contactref element="NRF8001" pad="8"/>
 <contactref element="ATMEGA328" pad="17"/>
-<wire x1="-27.94" y1="34.29" x2="-20.32" y2="62.23" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="REQ">
-<contactref element="NRF8001" pad="7"/>
-<contactref element="ATMEGA328" pad="16"/>
-<wire x1="-25.4" y1="34.29" x2="-22.86" y2="62.23" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="RDY">
-<contactref element="NRF8001" pad="6"/>
+<contactref element="NRF8001" pad="8"/>
+<wire x1="38.1" y1="39.37" x2="11.43173125" y2="60.71175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RST">
 <contactref element="NRF8001" pad="4"/>
-<contactref element="ATMEGA328" pad="15"/>
-<wire x1="-22.86" y1="34.29" x2="-30.48" y2="62.23" width="0" layer="19" extent="1-1"/>
+<contactref element="ATMEGA328" pad="16"/>
+<wire x1="40.64" y1="39.37" x2="21.590740625" y2="60.85360625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5VIN">
 <contactref element="ATMEGA328" pad="7"/>
-<contactref element="CAPACITOR-22PF-4" pad="-"/>
-<contactref element="R3" pad="2"/>
 <contactref element="ATMEGA328" pad="21"/>
-<contactref element="ATMEGA328" pad="20"/>
 <contactref element="3.3V-VR" pad="OUT"/>
 <contactref element="R2" pad="2"/>
-<wire x1="-26.543" y1="69.85" x2="-13.843" y2="69.85" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.56" y1="34.29" x2="-26.543" y2="69.85" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.1" y1="34.29" x2="-35.56" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.64" y1="26.67" x2="-38.1" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.75" y1="2.54" x2="-40.64" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-68.85" y1="44.45" x2="-38.1" y2="34.29" width="0" layer="19" extent="1-1"/>
+<contactref element="CAPACITOR-22PF-4" pad="-"/>
+<contactref element="R3" pad="2"/>
+<contactref element="ATMEGA328" pad="20"/>
+<wire x1="39.37" y1="11.303" x2="43.053" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="39.37" x2="39.37" y2="11.303" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="39.37" x2="30.48" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="31.75" x2="27.94" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="50.8" x2="25.4" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="59.42" y1="38.1" x2="27.94" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12VIN">
-<contactref element="K1" pad="4"/>
-<contactref element="5V-VR" pad="IN"/>
 <contactref element="12VIN" pad="2"/>
-<wire x1="-48.26" y1="2.54" x2="-54.86" y2="2.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.56" y1="50.8" x2="-48.26" y2="2.54" width="0" layer="19" extent="1-1"/>
+<contactref element="5V-VR" pad="IN"/>
+<contactref element="K1" pad="2"/>
+<wire x1="63.5" y1="50.8" x2="96.17" y2="11.68" width="0" layer="19" extent="1-1"/>
+<wire x1="96.25" y1="43.18" x2="63.5" y2="50.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ARDUINO.D3">
-<contactref element="ATMEGA328" pad="4"/>
-</signal>
-<signal name="N$5">
-<contactref element="5V-VR" pad="OUT"/>
-<contactref element="CAPACITOR-22PF-4" pad="+"/>
-<wire x1="-70.85" y1="44.45" x2="-43.18" y2="2.54" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$9">
-<contactref element="ATMEGA328" pad="22"/>
-</signal>
-<signal name="PD6">
-<contactref element="ATMEGA328" pad="12"/>
-<contactref element="R6" pad="1"/>
-<wire x1="-27.94" y1="26.67" x2="-49.403" y2="69.85" width="0" layer="19" extent="1-1"/>
+<contactref element="K1" pad="4"/>
+<contactref element="ATMEGA328" pad="5"/>
+<wire x1="20.32" y1="31.75" x2="96.17" y2="23.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R1" pad="1"/>
 <contactref element="D1" pad="+"/>
-<wire x1="-64.643" y1="62.23" x2="-16.5098" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="63.373" y1="45.72" x2="73.6602" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="RESET-BUTTON" pad="2"/>
 <contactref element="ATMEGA328" pad="1"/>
-<wire x1="-47.03" y1="59.69" x2="-55.88" y2="26.67" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$1">
-<contactref element="12VO" pad="2"/>
-</signal>
-<signal name="N$6">
-<contactref element="3.3V-VR" pad="GND"/>
+<contactref element="R3" pad="1"/>
+<wire x1="5.08" y1="19.09" x2="39.37" y2="21.463" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="31.75" x2="5.08" y2="19.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="RED-LED1" pad="A"/>
 <contactref element="R6" pad="2"/>
-<wire x1="-52.07" y1="53.34" x2="-39.243" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="20.32" x2="53.467" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
-<contactref element="RED-LED" pad="A"/>
 <contactref element="R2" pad="1"/>
-<wire x1="-59.69" y1="53.34" x2="-24.003" y2="69.85" width="0" layer="19" extent="1-1"/>
+<contactref element="RED-LED" pad="A"/>
+<wire x1="58.42" y1="11.43" x2="53.213" y2="11.43" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="ATMEGA328" pad="9"/>
+<contactref element="CAPACITOR-16HZ" pad="2"/>
+<contactref element="CAPACITOR-22PF-1" pad="-"/>
+<wire x1="79.74" y1="31.75" x2="72.263" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="31.75" x2="79.74" y2="31.75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="ATMEGA328" pad="10"/>
+<contactref element="CAPACITOR-16HZ" pad="1"/>
+<contactref element="CAPACITOR-22PF-2" pad="-"/>
+<wire x1="67.04" y1="26.67" x2="67.437" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="31.75" x2="67.04" y2="26.67" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="K1" pad="1"/>
+<contactref element="12VO" pad="2"/>
+<wire x1="6.08" y1="8.89" x2="90.17" y2="9.68" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="3.3V-VR" pad="GND"/>
+<contactref element="CAPACITOR-22PF-3" pad="+"/>
+<wire x1="9.89" y1="50.8" x2="36.83" y2="50.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="CAPACITOR-22PF-4" pad="+"/>
+<contactref element="5V-VR" pad="OUT"/>
+<wire x1="57.42" y1="38.1" x2="68.58" y2="50.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ACT">
+<contactref element="NRF8001" pad="5"/>
+<contactref element="NRF8001" pad="7"/>
+<wire x1="19.0509875" y1="60.81814375" x2="13.971484375" y2="60.747215625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PIN13">
+<contactref element="ATMEGA328" pad="15"/>
+<contactref element="R6" pad="1"/>
+<wire x1="43.18" y1="39.37" x2="43.307" y2="16.51" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RDY">
+<contactref element="NRF8001" pad="6"/>
+<contactref element="ATMEGA328" pad="4"/>
+<wire x1="17.78" y1="31.75" x2="16.5112375" y2="60.782678125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
