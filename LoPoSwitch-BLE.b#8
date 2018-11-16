@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -52,7 +53,7 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -153,10 +154,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="-1.27" y1="3.81" x2="98.73" y2="3.81" width="0" layer="20"/>
+<wire x1="98.73" y1="3.81" x2="101.27" y2="64.76" width="0" layer="20"/>
+<wire x1="101.27" y1="64.76" x2="1.27" y2="64.76" width="0" layer="20"/>
+<wire x1="1.27" y1="64.76" x2="-1.27" y2="3.81" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -686,16 +687,20 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -787,62 +792,102 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ATMEGA328" library="SparkFun-Connectors" package="DIL28-3-ZIF_SOCKET" value="ZIFSOCKET-28-3ZIFFSOCKET-28-3" x="26.67" y="35.56"/>
+<element name="ATMEGA328" library="SparkFun-Connectors" package="DIL28-3-ZIF_SOCKET" value="ZIFSOCKET-28-3ZIFFSOCKET-28-3" x="26.67" y="35.56">
+<attribute name="MF" value="" x="26.67" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="26.67" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="26.67" y="35.56" size="1.778" layer="27" display="off"/>
+</element>
 <element name="12VIN" library="SparkFun-Connectors" package="JST-2-PTH" value="12V" x="95.25" y="43.18" rot="R90">
+<attribute name="MF" value="" x="95.25" y="43.18" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="95.25" y="43.18" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="95.25" y="43.18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PROD_ID" value="CONN-09863" x="146.05" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SKU" value="PRT-09914" x="146.05" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="12VO" library="SparkFun-Connectors" package="JST-2-PTH" value="12V" x="5.08" y="8.89" rot="R270">
+<attribute name="MF" value="" x="5.08" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="5.08" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.08" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PROD_ID" value="CONN-09863" x="-45.72" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SKU" value="PRT-09914" x="-45.72" y="-33.02" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="3.3V-VR" library="SparkFun-PowerIC" package="78XXL" value="V_REG_LD1117VXX" x="45.72" y="54.61"/>
+<element name="3.3V-VR" library="SparkFun-PowerIC" package="78XXL" value="V_REG_LD1117VXX" x="45.72" y="54.61">
+<attribute name="MF" value="" x="45.72" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="45.72" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="45.72" y="54.61" size="1.778" layer="27" display="off"/>
+</element>
 <element name="5V-VR" library="SparkFun-PowerIC" package="TO-220-ALT" value="5V" x="66.04" y="54.61">
-<attribute name="SF_ID" value="COM-00107" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="66.04" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="66.04" y="54.61" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="66.04" y="54.61" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value="VREG-08450" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="SF_ID" value="COM-00107" x="111.76" y="48.26" size="1.778" layer="27" display="off"/>
 </element>
 <element name="NRF8001" library="SparkFun-Connectors" package="1X10" value="3.3V" x="29.21" y="60.96" rot="R180.8">
+<attribute name="MF" value="" x="29.21" y="60.96" size="1.778" layer="27" rot="R180.8" display="off"/>
+<attribute name="MPN" value="" x="29.21" y="60.96" size="1.778" layer="27" rot="R180.8" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="29.21" y="60.96" size="1.778" layer="27" rot="R180.8" display="off"/>
 <attribute name="PROD_ID" value="CONN-11563" x="-9.75515" y="122.65196875" size="1.778" layer="27" rot="R180.8" display="off"/>
 </element>
 <element name="RESET-BUTTON" library="Seeed-Switch" package="SW2-5.0-6.0X3.0X4.3MM" value="TS-1101F" x="5.08" y="21.59" rot="R270">
-<attribute name="MPN" value="TS-1101F" x="-54.61" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="5.08" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="-54.61" y="-27.94" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.08" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="CAPACITOR-16HZ" library="Seeed-Crystal Oscillator" package="HC49US" value="16MHZ" x="69.85" y="38.1">
-<attribute name="MPN" value="49S/18PF" x="96.52" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="69.85" y="38.1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="96.52" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="69.85" y="38.1" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAPACITOR-22PF-1" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="96.52" y="33.02">
-<attribute name="MPN" value="KS 100uF/16V" x="120.65" y="-11.43" size="1.778" layer="27" display="off"/>
+<element name="CAPACITOR-22PF-1" library="Seeed-Capacitor" package="PC-D5.3MM" value="22pf" x="96.52" y="33.02">
+<attribute name="MF" value="" x="96.52" y="33.02" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="120.65" y="-11.43" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="96.52" y="33.02" size="1.778" layer="27" display="off"/>
 </element>
-<element name="CAPACITOR-22PF-2" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="72.39" y="19.05">
-<attribute name="MPN" value="KS 100uF/16V" x="111.76" y="-25.4" size="1.778" layer="27" display="off"/>
-</element>
-<element name="CAPACITOR-22PF-3" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="8.89" y="50.8" rot="R180">
-<attribute name="MPN" value="KS 100uF/16V" x="-45.72" y="95.25" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="CAPACITOR-22PF-2" library="Seeed-Capacitor" package="PC-D5.3MM" value="22pf" x="72.39" y="19.05">
+<attribute name="MF" value="" x="72.39" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="111.76" y="-25.4" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="72.39" y="19.05" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R6" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="48.26" y="16.51">
-<attribute name="MPN" value="FHCFR-1/4W-221J" x="92.71" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="48.26" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="92.71" y="-53.34" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="48.26" y="16.51" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RED-LED" library="Seeed-LED" package="LED2-2.54-D3.0MM" value="SR302DC" x="59.69" y="11.43">
-<attribute name="MPN" value="SR302DC" x="118.11" y="-41.91" size="1.778" layer="27" display="off"/>
-</element>
-<element name="CAPACITOR-22PF-4" library="Seeed-Capacitor" package="PC-D5.3MM" value="100uf" x="58.42" y="39.37">
-<attribute name="MPN" value="KS 100uF/16V" x="128.27" y="-5.08" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="59.69" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="118.11" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="59.69" y="11.43" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R3" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="1M" x="39.37" y="16.51" rot="R270">
-<attribute name="MPN" value="FHCFR-1/4W-105J" x="-30.48" y="-15.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="" x="39.37" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="-30.48" y="-15.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="39.37" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R1" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="58.42" y="45.72" rot="R180">
-<attribute name="MPN" value="FHCFR-1/4W-221J" x="-1.27" y="107.95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="58.42" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="-1.27" y="107.95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="58.42" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D1" library="Seeed-LED" package="LED2-2.54-D5.0MM" value="504BW" x="74.93" y="45.72">
-<attribute name="MPN" value="504BW" x="90.17" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="74.93" y="45.72" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="90.17" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="74.93" y="45.72" size="1.778" layer="27" display="off"/>
 </element>
-<element name="K1" library="Seeed-Relay" package="REY5-19.0X15.0X15.0MM" value="12V" x="90.17" y="17.78" rot="R90"/>
+<element name="K1" library="Seeed-Relay" package="REY5-19.0X15.0X15.0MM" value="12V" x="90.17" y="17.78" rot="R90">
+<attribute name="MF" value="" x="90.17" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="90.17" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="90.17" y="17.78" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="RED-LED1" library="Seeed-LED" package="LED2-2.54-D3.0MM" value="SR302DC" x="59.69" y="20.32">
-<attribute name="MPN" value="SR302DC" x="110.49" y="-33.02" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="59.69" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="110.49" y="-33.02" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="59.69" y="20.32" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R2" library="Seeed-Resistor" package="PR-D2.3XL6.5MM" value="220R" x="48.26" y="11.43" rot="R180">
-<attribute name="MPN" value="FHCFR-1/4W-221J" x="29.21" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="48.26" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="29.21" y="81.28" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="48.26" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -903,7 +948,6 @@ design rules under a new name.</description>
 <wire x1="45.72" y1="48.26" x2="41.91" y2="44.45" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3VIN">
-<contactref element="CAPACITOR-22PF-3" pad="-"/>
 <contactref element="NRF8001" pad="3"/>
 <wire x1="12.7" y1="55.88" x2="7.62" y2="50.8" width="0.254" layer="16"/>
 <wire x1="26.67" y1="55.88" x2="12.7" y2="55.88" width="0.254" layer="16"/>
@@ -911,8 +955,12 @@ design rules under a new name.</description>
 <wire x1="27.94" y1="58.42" x2="27.94" y2="57.15" width="0.254" layer="16"/>
 <wire x1="26.67" y1="58.42" x2="27.94" y2="58.42" width="0.254" layer="16"/>
 <wire x1="24.13" y1="60.96" x2="26.67" y2="58.42" width="0.254" layer="16"/>
-<wire x1="7.62" y1="50.8" x2="7.89" y2="50.8" width="0.254" layer="16"/>
 <wire x1="24.13" y1="60.96" x2="24.13049375" y2="60.889071875" width="0.254" layer="16"/>
+<contactref element="3.3V-VR" pad="GND"/>
+<wire x1="12.7" y1="53.34" x2="10.16" y2="50.8" width="0.254" layer="16"/>
+<wire x1="43.18" y1="53.34" x2="12.7" y2="53.34" width="0.254" layer="16"/>
+<wire x1="45.72" y1="50.8" x2="43.18" y2="53.34" width="0.254" layer="16"/>
+<wire x1="12.7" y1="55.88" x2="12.7" y2="53.34" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCK">
 <contactref element="R1" pad="2"/>
@@ -962,7 +1010,6 @@ design rules under a new name.</description>
 <contactref element="ATMEGA328" pad="21"/>
 <contactref element="3.3V-VR" pad="OUT"/>
 <contactref element="R2" pad="2"/>
-<contactref element="CAPACITOR-22PF-4" pad="-"/>
 <contactref element="R3" pad="2"/>
 <contactref element="ATMEGA328" pad="20"/>
 <wire x1="25.4" y1="38.1" x2="25.4" y2="31.75" width="0.254" layer="16"/>
@@ -974,14 +1021,15 @@ design rules under a new name.</description>
 <wire x1="39.37" y1="11.43" x2="39.37" y2="11.303" width="0.254" layer="1"/>
 <wire x1="59.69" y1="50.8" x2="59.69" y2="39.37" width="0.254" layer="16"/>
 <wire x1="48.26" y1="50.8" x2="59.69" y2="50.8" width="0.254" layer="16"/>
-<wire x1="59.69" y1="39.37" x2="59.42" y2="39.37" width="0.254" layer="16"/>
 <wire x1="59.69" y1="27.94" x2="43.18" y2="11.43" width="0.254" layer="1"/>
 <wire x1="59.69" y1="39.37" x2="59.69" y2="27.94" width="0.254" layer="1"/>
 <wire x1="43.18" y1="11.43" x2="43.053" y2="11.43" width="0.254" layer="1"/>
-<wire x1="59.69" y1="39.37" x2="59.42" y2="39.37" width="0.254" layer="1"/>
 <wire x1="34.29" y1="22.86" x2="25.4" y2="31.75" width="0.254" layer="1"/>
 <wire x1="40.64" y1="22.86" x2="34.29" y2="22.86" width="0.254" layer="1"/>
 <wire x1="40.64" y1="11.43" x2="40.64" y2="22.86" width="0.254" layer="1"/>
+<contactref element="5V-VR" pad="OUT"/>
+<wire x1="59.69" y1="50.8" x2="68.58" y2="50.8" width="0" layer="19" extent="16-16"/>
+<wire x1="59.69" y1="39.37" x2="59.69" y2="39.37" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="12VIN">
 <contactref element="12VIN" pad="2"/>
@@ -1070,22 +1118,6 @@ design rules under a new name.</description>
 <wire x1="90.17" y1="8.89" x2="6.35" y2="8.89" width="0.254" layer="16"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="7.89" width="0.254" layer="16"/>
 <wire x1="90.17" y1="8.89" x2="90.17" y2="9.68" width="0.254" layer="16"/>
-</signal>
-<signal name="N$4">
-<contactref element="3.3V-VR" pad="GND"/>
-<contactref element="CAPACITOR-22PF-3" pad="+"/>
-<wire x1="12.7" y1="53.34" x2="10.16" y2="50.8" width="0.254" layer="16"/>
-<wire x1="43.18" y1="53.34" x2="12.7" y2="53.34" width="0.254" layer="16"/>
-<wire x1="45.72" y1="50.8" x2="43.18" y2="53.34" width="0.254" layer="16"/>
-<wire x1="10.16" y1="50.8" x2="9.89" y2="50.8" width="0.254" layer="16"/>
-</signal>
-<signal name="N$5">
-<contactref element="CAPACITOR-22PF-4" pad="+"/>
-<contactref element="5V-VR" pad="OUT"/>
-<wire x1="62.23" y1="44.45" x2="57.15" y2="39.37" width="0.254" layer="1"/>
-<wire x1="68.58" y1="44.45" x2="62.23" y2="44.45" width="0.254" layer="1"/>
-<wire x1="68.58" y1="50.8" x2="68.58" y2="44.45" width="0.254" layer="1"/>
-<wire x1="57.15" y1="39.37" x2="57.42" y2="39.37" width="0.254" layer="1"/>
 </signal>
 <signal name="ACT">
 <contactref element="NRF8001" pad="5"/>
