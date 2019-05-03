@@ -1,6 +1,10 @@
 LoPoSwitch is designed to switch 12V devices on and off. It can be ruled by Smartphone or Cloud. LoPoSwitch connects to Cloud or Smartphone over WiFi or Bluetooth LE.
 
 ## Changelog
+
+### v.0.9.1
+- New WiFi Module Adafruit ATWINC1500 WiFi Breakout
+
 ### v.0.7
 - Connect Digital Pin 1 (Pin3) to Reset Pin. This makes Software Reset possible
 
